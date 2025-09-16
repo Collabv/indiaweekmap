@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8d88af9d71ef632fbbeb359fbb57cadf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8d88af9d71ef632fbbeb359fbb57cadf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8d88af9d71ef632fbbeb359fbb57cadf = L.map(
+                "map_8d88af9d71ef632fbbeb359fbb57cadf",
+                {
+                    center: [40.7725, -73.9835],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5e4272142634f1d84f0d895aaea76342 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_9744e30a0787ea036ebb9b0122729eb8 = L.marker(
+                [40.7725, -73.9835],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_a17c746d074e6237445075473e390691 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9744e30a0787ea036ebb9b0122729eb8.setIcon(icon_a17c746d074e6237445075473e390691);
+        
+    
+        var popup_7571049e1f295453180319e02ae4d0ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05b14b76c68f4279d743848ef355c5a3 = $(`<div id="html_05b14b76c68f4279d743848ef355c5a3" style="width: 100.0%; height: 100.0%;">Lincoln Center</div>`)[0];
+            popup_7571049e1f295453180319e02ae4d0ad.setContent(html_05b14b76c68f4279d743848ef355c5a3);
+        
+
+        marker_9744e30a0787ea036ebb9b0122729eb8.bindPopup(popup_7571049e1f295453180319e02ae4d0ad)
+        ;
+
+        
+    
+    
+            marker_9744e30a0787ea036ebb9b0122729eb8.bindTooltip(
+                `<div>
+                     Lincoln Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c0491f8702f4c436a2106ee6982b96f = L.marker(
+                [40.7729, -73.984],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_d5ebdf2f040dc8633eafd1a52d4c6a38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0c0491f8702f4c436a2106ee6982b96f.setIcon(icon_d5ebdf2f040dc8633eafd1a52d4c6a38);
+        
+    
+        var popup_8d73455742ff9ad1d840e0ff63736eb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7ed1b5190d9b7d0657f651b2d46df2d = $(`<div id="html_c7ed1b5190d9b7d0657f651b2d46df2d" style="width: 100.0%; height: 100.0%;"><b>Metropolitan Opera House</b><br>Distance from Lincoln Center: 0.0 mi (0.1 km)</div>`)[0];
+            popup_8d73455742ff9ad1d840e0ff63736eb9.setContent(html_c7ed1b5190d9b7d0657f651b2d46df2d);
+        
+
+        marker_0c0491f8702f4c436a2106ee6982b96f.bindPopup(popup_8d73455742ff9ad1d840e0ff63736eb9)
+        ;
+
+        
+    
+    
+            marker_0c0491f8702f4c436a2106ee6982b96f.bindTooltip(
+                `<div>
+                     Metropolitan Opera House
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_403af15203eb050857c3bc33be01cbf4 = L.polyline(
+                [[40.7725, -73.9835], [40.7729, -73.984]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_1659202492a96d913196660070de770a = L.marker(
+                [40.75997, -73.9799],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_3d36b72e0f5f15e583d64cb37cf59142 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1659202492a96d913196660070de770a.setIcon(icon_3d36b72e0f5f15e583d64cb37cf59142);
+        
+    
+        var popup_1be227dd423d1613c22b9b70a0f0e955 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_287af6a812d5c37568cb284bb516970f = $(`<div id="html_287af6a812d5c37568cb284bb516970f" style="width: 100.0%; height: 100.0%;"><b>Radio City Music Hall</b><br>Distance from Lincoln Center: 0.9 mi (1.4 km)</div>`)[0];
+            popup_1be227dd423d1613c22b9b70a0f0e955.setContent(html_287af6a812d5c37568cb284bb516970f);
+        
+
+        marker_1659202492a96d913196660070de770a.bindPopup(popup_1be227dd423d1613c22b9b70a0f0e955)
+        ;
+
+        
+    
+    
+            marker_1659202492a96d913196660070de770a.bindTooltip(
+                `<div>
+                     Radio City Music Hall
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_849a2cc288a2ab803747f2edb82d2bea = L.polyline(
+                [[40.7725, -73.9835], [40.75997, -73.9799]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_bbd1fcdf3fcc5f0c2d6e5fb697d2d6ec = L.marker(
+                [40.7685, -73.9656],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_cfefd906efa3d262681d88c2d72f0b7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bbd1fcdf3fcc5f0c2d6e5fb697d2d6ec.setIcon(icon_cfefd906efa3d262681d88c2d72f0b7f);
+        
+    
+        var popup_b9931ebfae51232892f9e4ee01631f3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7fd8b44ee238867bbd1352889e3467f9 = $(`<div id="html_7fd8b44ee238867bbd1352889e3467f9" style="width: 100.0%; height: 100.0%;"><b>Park Avenue Armory</b><br>Distance from Lincoln Center: 1.0 mi (1.6 km)</div>`)[0];
+            popup_b9931ebfae51232892f9e4ee01631f3c.setContent(html_7fd8b44ee238867bbd1352889e3467f9);
+        
+
+        marker_bbd1fcdf3fcc5f0c2d6e5fb697d2d6ec.bindPopup(popup_b9931ebfae51232892f9e4ee01631f3c)
+        ;
+
+        
+    
+    
+            marker_bbd1fcdf3fcc5f0c2d6e5fb697d2d6ec.bindTooltip(
+                `<div>
+                     Park Avenue Armory
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_38ecaca2ff393ead9554c9ec440b44d6 = L.polyline(
+                [[40.7725, -73.9835], [40.7685, -73.9656]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_8e7e8a0ab01856d7e2e0f991aec3743a = L.marker(
+                [40.7505, -73.9934],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_3726d4f8ef085dddc40d409b8a063e0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8e7e8a0ab01856d7e2e0f991aec3743a.setIcon(icon_3726d4f8ef085dddc40d409b8a063e0b);
+        
+    
+        var popup_937455a42ad50832f5dd7ff3c00a3517 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab419b7ec21393fccf86c33d3b4f0d60 = $(`<div id="html_ab419b7ec21393fccf86c33d3b4f0d60" style="width: 100.0%; height: 100.0%;"><b>Madison Square Garden</b><br>Distance from Lincoln Center: 1.6 mi (2.6 km)</div>`)[0];
+            popup_937455a42ad50832f5dd7ff3c00a3517.setContent(html_ab419b7ec21393fccf86c33d3b4f0d60);
+        
+
+        marker_8e7e8a0ab01856d7e2e0f991aec3743a.bindPopup(popup_937455a42ad50832f5dd7ff3c00a3517)
+        ;
+
+        
+    
+    
+            marker_8e7e8a0ab01856d7e2e0f991aec3743a.bindTooltip(
+                `<div>
+                     Madison Square Garden
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d741d802bf82a47e0bc74bb2a98c2b5b = L.polyline(
+                [[40.7725, -73.9835], [40.7505, -73.9934]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_357c992a300e7e930b7f97c72c9e63d4 = L.marker(
+                [40.7135, -73.726],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_e9a4b00034fbef198d65c788883b7502 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_357c992a300e7e930b7f97c72c9e63d4.setIcon(icon_e9a4b00034fbef198d65c788883b7502);
+        
+    
+        var popup_958edf941322be66d716a5cc6e375fed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c4390aac888c25c2e943a1e6b21d490 = $(`<div id="html_5c4390aac888c25c2e943a1e6b21d490" style="width: 100.0%; height: 100.0%;"><b>UBS Arena</b><br>Distance from Lincoln Center: 14.1 mi (22.7 km)</div>`)[0];
+            popup_958edf941322be66d716a5cc6e375fed.setContent(html_5c4390aac888c25c2e943a1e6b21d490);
+        
+
+        marker_357c992a300e7e930b7f97c72c9e63d4.bindPopup(popup_958edf941322be66d716a5cc6e375fed)
+        ;
+
+        
+    
+    
+            marker_357c992a300e7e930b7f97c72c9e63d4.bindTooltip(
+                `<div>
+                     UBS Arena
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_737b36d7ecb75497811c94a8dda7d875 = L.polyline(
+                [[40.7725, -73.9835], [40.7135, -73.726]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_6096b7b005ecab64e60beb2c843b73dd = L.marker(
+                [40.6826, -73.9754],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_c446ba9a1b1a93a4252957bbeec587c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6096b7b005ecab64e60beb2c843b73dd.setIcon(icon_c446ba9a1b1a93a4252957bbeec587c5);
+        
+    
+        var popup_0ac7da8730fdea99dcb4450b11498eb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8723ddc508274c39b828e303688cc244 = $(`<div id="html_8723ddc508274c39b828e303688cc244" style="width: 100.0%; height: 100.0%;"><b>Barclays Center</b><br>Distance from Lincoln Center: 6.2 mi (10.0 km)</div>`)[0];
+            popup_0ac7da8730fdea99dcb4450b11498eb3.setContent(html_8723ddc508274c39b828e303688cc244);
+        
+
+        marker_6096b7b005ecab64e60beb2c843b73dd.bindPopup(popup_0ac7da8730fdea99dcb4450b11498eb3)
+        ;
+
+        
+    
+    
+            marker_6096b7b005ecab64e60beb2c843b73dd.bindTooltip(
+                `<div>
+                     Barclays Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f1da08a3cd3bc4c331c1e88f7328f0e6 = L.polyline(
+                [[40.7725, -73.9835], [40.6826, -73.9754]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_d67b3b51a634c38b9f7aa09a392f9faf = L.marker(
+                [40.7336, -74.171],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_1e411c5738585869c7d790b0cb934e53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d67b3b51a634c38b9f7aa09a392f9faf.setIcon(icon_1e411c5738585869c7d790b0cb934e53);
+        
+    
+        var popup_71b0f96331b7f305644f74cf404819a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d707a205176116f23f67dfe327980778 = $(`<div id="html_d707a205176116f23f67dfe327980778" style="width: 100.0%; height: 100.0%;"><b>Prudential Center</b><br>Distance from Lincoln Center: 10.2 mi (16.4 km)</div>`)[0];
+            popup_71b0f96331b7f305644f74cf404819a6.setContent(html_d707a205176116f23f67dfe327980778);
+        
+
+        marker_d67b3b51a634c38b9f7aa09a392f9faf.bindPopup(popup_71b0f96331b7f305644f74cf404819a6)
+        ;
+
+        
+    
+    
+            marker_d67b3b51a634c38b9f7aa09a392f9faf.bindTooltip(
+                `<div>
+                     Prudential Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d2b8389dcd3962a788bf974a7bd5941c = L.polyline(
+                [[40.7725, -73.9835], [40.7336, -74.171]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_bda1efcadc882d3a7a1b392c3de31645 = L.marker(
+                [40.7577, -74.0026],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_e5653aadfb41c6259d0bc4a2257d253a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bda1efcadc882d3a7a1b392c3de31645.setIcon(icon_e5653aadfb41c6259d0bc4a2257d253a);
+        
+    
+        var popup_60ba648f86300dc6db4982575e16149e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be1b9f80c020cf1eb98109210f7f9887 = $(`<div id="html_be1b9f80c020cf1eb98109210f7f9887" style="width: 100.0%; height: 100.0%;"><b>Jacob K. Javits Center</b><br>Distance from Lincoln Center: 1.4 mi (2.3 km)</div>`)[0];
+            popup_60ba648f86300dc6db4982575e16149e.setContent(html_be1b9f80c020cf1eb98109210f7f9887);
+        
+
+        marker_bda1efcadc882d3a7a1b392c3de31645.bindPopup(popup_60ba648f86300dc6db4982575e16149e)
+        ;
+
+        
+    
+    
+            marker_bda1efcadc882d3a7a1b392c3de31645.bindTooltip(
+                `<div>
+                     Jacob K. Javits Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4edb126a23f281b683b5f220eea8d397 = L.polyline(
+                [[40.7725, -73.9835], [40.7577, -74.0026]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_aeb5097dd9da7978ded15113aabe4bae = L.marker(
+                [40.8296, -73.9262],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_8a1064990f8a21b7bbed9963b6fc8611 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aeb5097dd9da7978ded15113aabe4bae.setIcon(icon_8a1064990f8a21b7bbed9963b6fc8611);
+        
+    
+        var popup_3e2f12857089bb64f5cba23d64f7b1ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06af1bbda74fe01e5abfe1af525d985e = $(`<div id="html_06af1bbda74fe01e5abfe1af525d985e" style="width: 100.0%; height: 100.0%;"><b>Yankee Stadium</b><br>Distance from Lincoln Center: 5.0 mi (8.0 km)</div>`)[0];
+            popup_3e2f12857089bb64f5cba23d64f7b1ec.setContent(html_06af1bbda74fe01e5abfe1af525d985e);
+        
+
+        marker_aeb5097dd9da7978ded15113aabe4bae.bindPopup(popup_3e2f12857089bb64f5cba23d64f7b1ec)
+        ;
+
+        
+    
+    
+            marker_aeb5097dd9da7978ded15113aabe4bae.bindTooltip(
+                `<div>
+                     Yankee Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fca2eb855999742568e0d52bea79d59c = L.polyline(
+                [[40.7725, -73.9835], [40.8296, -73.9262]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_4999ec57f8760e637a1b321477c6086e = L.marker(
+                [40.7571, -73.8458],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_6f98ba8fe86a2063ae4d81978feb961b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4999ec57f8760e637a1b321477c6086e.setIcon(icon_6f98ba8fe86a2063ae4d81978feb961b);
+        
+    
+        var popup_d4d3f005829985c49d9c5d0641ea321c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee557e63174e1de33a85c75f8e62d2d8 = $(`<div id="html_ee557e63174e1de33a85c75f8e62d2d8" style="width: 100.0%; height: 100.0%;"><b>Citi Field</b><br>Distance from Lincoln Center: 7.3 mi (11.7 km)</div>`)[0];
+            popup_d4d3f005829985c49d9c5d0641ea321c.setContent(html_ee557e63174e1de33a85c75f8e62d2d8);
+        
+
+        marker_4999ec57f8760e637a1b321477c6086e.bindPopup(popup_d4d3f005829985c49d9c5d0641ea321c)
+        ;
+
+        
+    
+    
+            marker_4999ec57f8760e637a1b321477c6086e.bindTooltip(
+                `<div>
+                     Citi Field
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_291d86c482eb4c76f203f120cfdeeb9f = L.polyline(
+                [[40.7725, -73.9835], [40.7571, -73.8458]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_f7be56597264d8bb355614743250ea8d = L.marker(
+                [40.8135, -74.0745],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_7c0c255bd0a28ca74b20e855f53dd655 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f7be56597264d8bb355614743250ea8d.setIcon(icon_7c0c255bd0a28ca74b20e855f53dd655);
+        
+    
+        var popup_d6176746a7c58a87219357eded60e0fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_471ad9c31e380b020209f6108ce55f58 = $(`<div id="html_471ad9c31e380b020209f6108ce55f58" style="width: 100.0%; height: 100.0%;"><b>MetLife Stadium</b><br>Distance from Lincoln Center: 5.5 mi (8.9 km)</div>`)[0];
+            popup_d6176746a7c58a87219357eded60e0fa.setContent(html_471ad9c31e380b020209f6108ce55f58);
+        
+
+        marker_f7be56597264d8bb355614743250ea8d.bindPopup(popup_d6176746a7c58a87219357eded60e0fa)
+        ;
+
+        
+    
+    
+            marker_f7be56597264d8bb355614743250ea8d.bindTooltip(
+                `<div>
+                     MetLife Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f49f85f523b4901c3461f03265c9a128 = L.polyline(
+                [[40.7725, -73.9835], [40.8135, -74.0745]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_1a915c7431bb6c89c396ab3a425505d5 = L.marker(
+                [40.7498, -73.8476],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_b91b621eb7dd8ee4d339eb969ff3b5c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1a915c7431bb6c89c396ab3a425505d5.setIcon(icon_b91b621eb7dd8ee4d339eb969ff3b5c4);
+        
+    
+        var popup_9354a2db16e86063cb04b8497dae84f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6f652b5c25e249c5f1196532e2fe87e = $(`<div id="html_a6f652b5c25e249c5f1196532e2fe87e" style="width: 100.0%; height: 100.0%;"><b>Arthur Ashe Stadium</b><br>Distance from Lincoln Center: 7.3 mi (11.7 km)</div>`)[0];
+            popup_9354a2db16e86063cb04b8497dae84f2.setContent(html_a6f652b5c25e249c5f1196532e2fe87e);
+        
+
+        marker_1a915c7431bb6c89c396ab3a425505d5.bindPopup(popup_9354a2db16e86063cb04b8497dae84f2)
+        ;
+
+        
+    
+    
+            marker_1a915c7431bb6c89c396ab3a425505d5.bindTooltip(
+                `<div>
+                     Arthur Ashe Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b5deee55d3fd828744b9f5b8d8455ff5 = L.polyline(
+                [[40.7725, -73.9835], [40.7498, -73.8476]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_4d99077a61f0d01177bcd1cfbd2aefc3 = L.marker(
+                [40.7931, -73.9226],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_f8f12b19151bf377dbd92d2e67fb04af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4d99077a61f0d01177bcd1cfbd2aefc3.setIcon(icon_f8f12b19151bf377dbd92d2e67fb04af);
+        
+    
+        var popup_7946659a8e2deff73d4dcff410bdf40a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_224260f98c83e087406009fd5ea67c2e = $(`<div id="html_224260f98c83e087406009fd5ea67c2e" style="width: 100.0%; height: 100.0%;"><b>Icahn Stadium</b><br>Distance from Lincoln Center: 3.5 mi (5.6 km)</div>`)[0];
+            popup_7946659a8e2deff73d4dcff410bdf40a.setContent(html_224260f98c83e087406009fd5ea67c2e);
+        
+
+        marker_4d99077a61f0d01177bcd1cfbd2aefc3.bindPopup(popup_7946659a8e2deff73d4dcff410bdf40a)
+        ;
+
+        
+    
+    
+            marker_4d99077a61f0d01177bcd1cfbd2aefc3.bindTooltip(
+                `<div>
+                     Icahn Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7fc3de9d78943cbe9cf9f38bf21ce74f = L.polyline(
+                [[40.7725, -73.9835], [40.7931, -73.9226]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_46d4c2797fb1ca833daa3507f9c90a59 = L.marker(
+                [40.7367, -74.1502],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_ca58e06d1d9bba125d570d4343626334 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_46d4c2797fb1ca833daa3507f9c90a59.setIcon(icon_ca58e06d1d9bba125d570d4343626334);
+        
+    
+        var popup_b0a3fbe14a0425c881c582dee80b4c98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa10bee6f0af98c5dbed7050fafaf961 = $(`<div id="html_fa10bee6f0af98c5dbed7050fafaf961" style="width: 100.0%; height: 100.0%;"><b>Red Bull Arena</b><br>Distance from Lincoln Center: 9.1 mi (14.6 km)</div>`)[0];
+            popup_b0a3fbe14a0425c881c582dee80b4c98.setContent(html_fa10bee6f0af98c5dbed7050fafaf961);
+        
+
+        marker_46d4c2797fb1ca833daa3507f9c90a59.bindPopup(popup_b0a3fbe14a0425c881c582dee80b4c98)
+        ;
+
+        
+    
+    
+            marker_46d4c2797fb1ca833daa3507f9c90a59.bindTooltip(
+                `<div>
+                     Red Bull Arena
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9790a3c8e77ecd23c14565d6b5bf2a7e = L.polyline(
+                [[40.7725, -73.9835], [40.7367, -74.1502]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_265738ce2d266c8269ebb6c028de0138 = L.marker(
+                [40.7498, -73.8448],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_66363e495395e0284cd4528c31144340 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_265738ce2d266c8269ebb6c028de0138.setIcon(icon_66363e495395e0284cd4528c31144340);
+        
+    
+        var popup_0945503b62a6ec4fcf71c69478c4a1e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b5088e2147c003841dc60e4e0c26f7b = $(`<div id="html_8b5088e2147c003841dc60e4e0c26f7b" style="width: 100.0%; height: 100.0%;"><b>Flushing Meadows</b><br>Distance from Lincoln Center: 7.4 mi (12.0 km)</div>`)[0];
+            popup_0945503b62a6ec4fcf71c69478c4a1e3.setContent(html_8b5088e2147c003841dc60e4e0c26f7b);
+        
+
+        marker_265738ce2d266c8269ebb6c028de0138.bindPopup(popup_0945503b62a6ec4fcf71c69478c4a1e3)
+        ;
+
+        
+    
+    
+            marker_265738ce2d266c8269ebb6c028de0138.bindTooltip(
+                `<div>
+                     Flushing Meadows
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_46dbd16ac1723a8296e30e7ac36dcc5f = L.polyline(
+                [[40.7725, -73.9835], [40.7498, -73.8448]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_9d367a0322018aef3339b36e79e7dcaf = L.marker(
+                [40.7308, -73.9973],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_77da3d1e40e92f4f1883fb0358905e6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9d367a0322018aef3339b36e79e7dcaf.setIcon(icon_77da3d1e40e92f4f1883fb0358905e6c);
+        
+    
+        var popup_7fa70a3ca963a824d8f26d6bff14ddd4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b029b5febc0a4b7a66a074d3d4935412 = $(`<div id="html_b029b5febc0a4b7a66a074d3d4935412" style="width: 100.0%; height: 100.0%;"><b>Washington Square Park</b><br>Distance from Lincoln Center: 3.0 mi (4.8 km)</div>`)[0];
+            popup_7fa70a3ca963a824d8f26d6bff14ddd4.setContent(html_b029b5febc0a4b7a66a074d3d4935412);
+        
+
+        marker_9d367a0322018aef3339b36e79e7dcaf.bindPopup(popup_7fa70a3ca963a824d8f26d6bff14ddd4)
+        ;
+
+        
+    
+    
+            marker_9d367a0322018aef3339b36e79e7dcaf.bindTooltip(
+                `<div>
+                     Washington Square Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3331bcfeb2c1e686a95c41ae6857850f = L.polyline(
+                [[40.7725, -73.9835], [40.7308, -73.9973]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_ec6e168e2f4bbd2ac9ea7bb2c039508d = L.marker(
+                [40.7359, -73.9911],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_b4cf90ebe924b6488d73f6c3323bb4e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ec6e168e2f4bbd2ac9ea7bb2c039508d.setIcon(icon_b4cf90ebe924b6488d73f6c3323bb4e4);
+        
+    
+        var popup_00f16b2ed102da0abd7ff9912e7324c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecf79f334b49bca917cf7ae558305b52 = $(`<div id="html_ecf79f334b49bca917cf7ae558305b52" style="width: 100.0%; height: 100.0%;"><b>Union Square Park</b><br>Distance from Lincoln Center: 2.6 mi (4.1 km)</div>`)[0];
+            popup_00f16b2ed102da0abd7ff9912e7324c0.setContent(html_ecf79f334b49bca917cf7ae558305b52);
+        
+
+        marker_ec6e168e2f4bbd2ac9ea7bb2c039508d.bindPopup(popup_00f16b2ed102da0abd7ff9912e7324c0)
+        ;
+
+        
+    
+    
+            marker_ec6e168e2f4bbd2ac9ea7bb2c039508d.bindTooltip(
+                `<div>
+                     Union Square Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_861bde5b9dc34522f5c087abd2ad495d = L.polyline(
+                [[40.7725, -73.9835], [40.7359, -73.9911]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_cc55300f62b00e53b35d266a2c25b1f6 = L.marker(
+                [40.7425, -73.9876],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_a586f44ea78b1ebbdc26f986a3ef1872 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cc55300f62b00e53b35d266a2c25b1f6.setIcon(icon_a586f44ea78b1ebbdc26f986a3ef1872);
+        
+    
+        var popup_7bfd511cc2df4b253361a84578968a03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b4631bd2a448dd65db9cda70b962f4c = $(`<div id="html_5b4631bd2a448dd65db9cda70b962f4c" style="width: 100.0%; height: 100.0%;"><b>Madison Square Park</b><br>Distance from Lincoln Center: 2.1 mi (3.4 km)</div>`)[0];
+            popup_7bfd511cc2df4b253361a84578968a03.setContent(html_5b4631bd2a448dd65db9cda70b962f4c);
+        
+
+        marker_cc55300f62b00e53b35d266a2c25b1f6.bindPopup(popup_7bfd511cc2df4b253361a84578968a03)
+        ;
+
+        
+    
+    
+            marker_cc55300f62b00e53b35d266a2c25b1f6.bindTooltip(
+                `<div>
+                     Madison Square Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8620c37a3ef202d17d9dd57dbeb7ca21 = L.polyline(
+                [[40.7725, -73.9835], [40.7425, -73.9876]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_7d6eaceae6906f1e02a22f1787f1540f = L.marker(
+                [40.7536, -73.9832],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_64a86c888dc2f83de75b1454f1c1d562 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7d6eaceae6906f1e02a22f1787f1540f.setIcon(icon_64a86c888dc2f83de75b1454f1c1d562);
+        
+    
+        var popup_e6cac5b13329d0f5ca27ada5a2779a4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43e2f6c5a909bf566a4f2f412adc8883 = $(`<div id="html_43e2f6c5a909bf566a4f2f412adc8883" style="width: 100.0%; height: 100.0%;"><b>Bryant Park</b><br>Distance from Lincoln Center: 1.3 mi (2.1 km)</div>`)[0];
+            popup_e6cac5b13329d0f5ca27ada5a2779a4d.setContent(html_43e2f6c5a909bf566a4f2f412adc8883);
+        
+
+        marker_7d6eaceae6906f1e02a22f1787f1540f.bindPopup(popup_e6cac5b13329d0f5ca27ada5a2779a4d)
+        ;
+
+        
+    
+    
+            marker_7d6eaceae6906f1e02a22f1787f1540f.bindTooltip(
+                `<div>
+                     Bryant Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_db1d37e26a6f670cb0e1475b393147f4 = L.polyline(
+                [[40.7725, -73.9835], [40.7536, -73.9832]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_c937a3b1f69009162590e7b3aed5f238 = L.marker(
+                [40.7829, -73.9654],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_0b35ba9d2ad8cbeaec7bf2e6b55a3fe3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c937a3b1f69009162590e7b3aed5f238.setIcon(icon_0b35ba9d2ad8cbeaec7bf2e6b55a3fe3);
+        
+    
+        var popup_1cab81cd2ad7aacc3600fab088183cf3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58ad34792b135db26eaa6477d83a727a = $(`<div id="html_58ad34792b135db26eaa6477d83a727a" style="width: 100.0%; height: 100.0%;"><b>Central Park</b><br>Distance from Lincoln Center: 1.2 mi (1.9 km)</div>`)[0];
+            popup_1cab81cd2ad7aacc3600fab088183cf3.setContent(html_58ad34792b135db26eaa6477d83a727a);
+        
+
+        marker_c937a3b1f69009162590e7b3aed5f238.bindPopup(popup_1cab81cd2ad7aacc3600fab088183cf3)
+        ;
+
+        
+    
+    
+            marker_c937a3b1f69009162590e7b3aed5f238.bindTooltip(
+                `<div>
+                     Central Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d5894bfb0cba9fa922094015afb17205 = L.polyline(
+                [[40.7725, -73.9835], [40.7829, -73.9654]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var marker_27acf429be15fac666445daa7d63959f = L.marker(
+                [40.6895, -74.0168],
+                {}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+    
+            var icon_c5a71058f4c6af09f6a7ed6be4a5f3cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_27acf429be15fac666445daa7d63959f.setIcon(icon_c5a71058f4c6af09f6a7ed6be4a5f3cf);
+        
+    
+        var popup_b86c5446d36405e8422d61608a613724 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f62e9c424c597e9e01c9220344bcadc0 = $(`<div id="html_f62e9c424c597e9e01c9220344bcadc0" style="width: 100.0%; height: 100.0%;"><b>Governors Island</b><br>Distance from Lincoln Center: 6.0 mi (9.6 km)</div>`)[0];
+            popup_b86c5446d36405e8422d61608a613724.setContent(html_f62e9c424c597e9e01c9220344bcadc0);
+        
+
+        marker_27acf429be15fac666445daa7d63959f.bindPopup(popup_b86c5446d36405e8422d61608a613724)
+        ;
+
+        
+    
+    
+            marker_27acf429be15fac666445daa7d63959f.bindTooltip(
+                `<div>
+                     Governors Island
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0f73b8256f653b5e7a79effcbde28790 = L.polyline(
+                [[40.7725, -73.9835], [40.6895, -74.0168]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_8d88af9d71ef632fbbeb359fbb57cadf);
+        
+</script>
+</html>
